@@ -1,0 +1,7 @@
+Accepted(TeamId) :-
+	Sessions(SessionId, TeamId, :ContestId, Start),
+	Runs(RunId, SessionId, :Letter, SubmitTime, 1).
+
+R(TeamName) :-
+	Teams(TeamId, TeamName, _),
+	Accepted(TeamId).

@@ -1,0 +1,3 @@
+p{RunId, SessionId, Letter, SubmitTime}(
+	s{Accepted = 1 && ContestId = :ContestId}(Sessions nj Runs)
+)

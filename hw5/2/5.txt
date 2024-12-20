@@ -1,0 +1,7 @@
+p{StudentId, StudentName, GroupName}(s{LecturerName = :LecturerName}(
+	Students nj 
+	Groups nj 
+	(r{FacultyId=GroupFacultyId}(Groups)) nj
+	(r{LecturerId=DeanId}(Faculties)) nj
+	Lecturers 
+))

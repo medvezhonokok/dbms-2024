@@ -1,0 +1,4 @@
+p{StudentName, CourseName}(
+	s{FacultyName = :FacultyName}(r{LecturerFacultyId=FacultyId}(Faculties)) 
+        nj Lecturers nj Students nj Courses nj Plan
+)

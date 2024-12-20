@@ -1,0 +1,7 @@
+p{TeamName}(
+    Teams
+    diff
+    p{TeamId,TeamName,UnivId}(
+        s{Accepted = 1}(Sessions nj Runs nj Teams)
+    )
+)

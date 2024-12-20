@@ -1,0 +1,4 @@
+StudentId, CourseId -> Mark
+StudentId, CourseId -> LecturerId
+
+Мы не можем удалить ни `Mark`, ни `LecturerId`, тк это единственные зависимости, в правой части которых есть `Mark` и `LecturerId` соответственно.

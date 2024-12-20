@@ -1,0 +1,9 @@
+p{TeamName} (
+	Teams
+	nj 
+	(
+		p{TeamId} (s{UnivName = :UnivName} (Universities) nj Teams)
+		diff
+		p{TeamId} (s{Accepted = 1} (Runs nj Sessions))
+	)
+)

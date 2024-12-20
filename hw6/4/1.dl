@@ -1,0 +1,7 @@
+WithMark(StudentId, CourseId) :-
+	Marks(StudentId, CourseId, Mark).
+R(StudentName, CourseName) :-
+	Students(StudentId, StudentName, GroupId),
+	Courses(CourseId, CourseName),
+	Plan(GroupId, CourseId, LecturerId),
+	not WithMark(StudentId, CourseId).

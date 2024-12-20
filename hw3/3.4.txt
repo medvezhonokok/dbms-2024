@@ -1,0 +1,5 @@
+FacultyDeanId, StudentId
+FacultyDeanId, GroupId, StudentName, StudentId
+FacultyDeanId, StudentName, GroupName, GroupId, GroupFacultyId, StudentId
+FacultyDeanId, StudentName, FacultyId, GroupName, GroupId, GroupFacultyId, StudentId
+FacultyDeanId, GroupId, StudentName, FacultyId, FacultyName, GroupName, GroupFacultyId, StudentId

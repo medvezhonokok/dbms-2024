@@ -1,0 +1,3 @@
+R(TeamId) :-
+	Sessions(SessionId, TeamId, :ContestId, Start),
+    Runs(RunId, SessionId, Letter, SubmitTime, 1).

@@ -1,0 +1,3 @@
+p{TeamName}(
+	Teams nj s{UnivName = :UnivName}(Universities)
+)

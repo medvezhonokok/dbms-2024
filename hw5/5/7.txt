@@ -1,0 +1,3 @@
+p{StudentName, CourseName}( 
+	Students nj r{LecturerId=DeanId}(Faculties) nj Plan nj Courses
+)

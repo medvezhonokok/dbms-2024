@@ -1,0 +1,5 @@
+CourseId, GroupId
+GroupFacultyId, GroupName, CourseId, GroupId
+GroupFacultyId, FacultyId, GroupName, CourseId, GroupId
+GroupFacultyId, FacultyName, FacultyId, FacultyDeanId, GroupName, CourseId, GroupId
+GroupFacultyId, FacultyName, FacultyId, FacultyDeanId, GroupName, CourseName, CourseId, GroupId

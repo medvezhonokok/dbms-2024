@@ -1,0 +1,3 @@
+p{StudentId, StudentName, GroupId}(s{Mark = :Mark && CourseId = :CourseId}(
+    Students nj Marks
+))

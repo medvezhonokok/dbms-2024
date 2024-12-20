@@ -1,0 +1,10 @@
+Post(StudentId) :-
+	Students(StudentId, StudentName, GroupId),
+	Lecturers(LecturerId, LecturerName, LecturerFacultyId),
+	Plan(GroupId, CourseId, LecturerId),
+	Marks(StudentId, CourseId, Mark),
+	LecturerName = :LecturerName.
+			
+Prev(StudentId) :-
+	Students(StudentId, StudentName, GroupId),
+	not Post(StudentId).

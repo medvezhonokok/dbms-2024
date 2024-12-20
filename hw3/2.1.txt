@@ -1,0 +1,55 @@
+Определим надключ как:
+{
+ StudentId, StudentName, GroupId, GroupName, GroupFacultyId,
+ CourseId, CourseName, LecturerId, LecturerName, LecturerFacultyId,
+ Mark, FacultyId, FacultyName, FacultyDeanId
+}
+
+
+Заметим, что:
+ - LecturerId -> LecturerFacultyId => LecturerFacultyId -- необязателен
+После преобразования:
+{
+ StudentId, StudentName, GroupId, GroupName, GroupFacultyId,
+ CourseId, CourseName, LecturerId, LecturerName,
+ Mark, FacultyId, FacultyName, FacultyDeanId
+}
+
+ - LecturerId -> LecturerName => LecturerName -- необязателен
+После преобразования:
+{
+ StudentId, StudentName, GroupId, GroupName, GroupFacultyId,
+ CourseId, CourseName, LecturerId,
+ Mark, FacultyId, FacultyName, FacultyDeanId
+}
+
+ - FacultyId -> FacultyName, FacultyDeanId => FacultyName, FacultyDeanId -- необязательны
+После преобразования:
+{
+ StudentId, StudentName, GroupId, GroupName, GroupFacultyId,
+ CourseId, CourseName, LecturerId,
+ Mark, FacultyId
+}
+
+ - GroupFacultyId -> FacultyId => FacultyId -- необязателен
+После преобразования:
+{
+ StudentId, StudentName, GroupId, GroupName, GroupFacultyId,
+ CourseId, CourseName, LecturerId, Mark
+}
+
+ - GroupId -> GroupName, GroupFacultyId => GroupName, GroupFacultyId -- необязательны
+После преобразования:
+{ StudentId, StudentName, GroupId, CourseId, CourseName, LecturerId, Mark }
+
+ - StudentId, CourseId -> Mark, LecturerId => Mark, LecturerId -- необязательны
+После преобразования:
+{ StudentId, StudentName, GroupId, CourseId, CourseName }
+
+ - CourseId -> CourseName => CourseName -- необязателен
+После преобразования:
+{ StudentId, StudentName, GroupId, CourseId }
+
+ - StudentId -> StudentName, GroupId -- необязательны
+После преобразования:
+{ StudentId, CourseId }

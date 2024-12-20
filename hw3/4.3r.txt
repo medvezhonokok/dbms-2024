@@ -1,0 +1,18 @@
+StudentId -> StudentName
+StudentId -> GroupId 
+StudentId, CourseId -> Mark
+StudentId, CourseId -> LecturerId
+GroupId -> GroupName
+GroupId -> GroupFacultyId
+GroupName -> GroupId
+GroupFacultyId -> FacultyId
+FacultyId -> GroupFacultyId
+FacultyId -> FacultyName
+FacultyId -> FacultyDeanId 
+FacultyName -> FacultyId
+CourseId -> CourseName 
+CourseName -> CourseId
+LecturerId -> LecturerName
+LecturerId -> LecturerFacultyId
+LecturerFacultyId -> FacultyId  
+FacultyDeanId -> FacultyId

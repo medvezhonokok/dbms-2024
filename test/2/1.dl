@@ -1,0 +1,4 @@
+R(UnivName) :-
+    Sessions(SessionId, TeamId, :ContestId, Start),
+    Teams(TeamId, TeamName, UnivId),
+    Universities(UnivId, UnivName).

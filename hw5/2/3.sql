@@ -1,0 +1,1 @@
+select StudentId, StudentName, GroupName from Groups natural join Students where GroupName = :GroupName;

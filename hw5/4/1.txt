@@ -1,0 +1,7 @@
+p{StudentId, StudentName, GroupId}(
+	Students except p{StudentId, StudentName, GroupId}(
+		Students nj 
+		Marks nj 
+		(s{CourseName = :CourseName}(Courses))
+	)
+)

@@ -1,0 +1,10 @@
+p{StudentId, StudentName, GroupId}(s{FacultyName = :FacultyName}(
+	Students nj Groups nj (r{GroupFacultyId = FacultyId}(Faculties))
+)) 
+
+except 
+
+p{StudentId, StudentName, GroupId}(
+	s{FacultyName = :FacultyName && CourseName = :CourseName}(
+		Students nj Marks nj Courses nj Groups nj r{GroupFacultyId = FacultyId}(Faculties)
+))

@@ -1,0 +1,6 @@
+LecturerId, GroupName
+LecturerId, GroupFacultyId, GroupId, GroupName
+LecturerId, GroupFacultyId, FacultyId, GroupId, GroupName
+LecturerId, GroupFacultyId, FacultyDeanId, FacultyId, GroupId, FacultyName, GroupName
+LecturerId, GroupFacultyId, LecturerName, FacultyDeanId, FacultyId, GroupId, FacultyName, GroupName
+LecturerFacultyId, FacultyId, FacultyName, GroupName, LecturerId, GroupFacultyId, LecturerName, FacultyDeanId, GroupId

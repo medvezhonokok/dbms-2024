@@ -1,0 +1,10 @@
+S2(CourseId, StudentId) :-
+	Marks(StudentId, CourseId, Mark).	                	
+S1(GroupId, CourseId) :-
+    Courses(CourseId, CourseName),
+	Students(StudentId, StudentName, GroupId),
+	not S2(CourseId, StudentId).	
+R(GroupId, CourseId) :-
+	Groups(GroupId, GroupName, GroupFacultyId),
+	Courses(CourseId, CourseName),
+	not S1(GroupId, CourseId).

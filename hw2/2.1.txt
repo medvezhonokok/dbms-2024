@@ -1,0 +1,4 @@
+id              -> int
+name        -> varchar(50)
+password -> varchar(55)
+digit          -> int

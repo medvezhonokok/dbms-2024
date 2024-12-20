@@ -1,0 +1,9 @@
+StudentId, CourseId
+StudentId, CourseId, StudentName, GroupId
+StudentId, CourseId, GroupId, Mark, StudentName, LecturerId
+GroupFacultyId, StudentId, CourseId, GroupId, Mark, StudentName, LecturerId, GroupName
+CourseId, Mark, StudentName, GroupName, GroupFacultyId, StudentId, GroupId, LecturerId, FacultyId
+CourseId, FacultyDeanId, Mark, FacultyName, StudentName, GroupName, GroupFacultyId, StudentId, GroupId, LecturerId, FacultyId
+CourseId, FacultyDeanId, Mark, FacultyName, CourseName, StudentName, GroupName, GroupFacultyId, StudentId, GroupId, LecturerId, FacultyId
+LecturerName, CourseId, FacultyDeanId, Mark, FacultyName, CourseName, StudentName, GroupName, GroupFacultyId, StudentId, GroupId, LecturerId, FacultyId
+LecturerName, CourseId, FacultyDeanId, Mark, FacultyName, CourseName, StudentName, GroupName, GroupFacultyId, StudentId, LecturerFacultyId, GroupId, LecturerId, FacultyId

@@ -1,0 +1,9 @@
+p{StudentName, CourseName}(
+    (Students nj Plan nj Courses)
+    except 
+    p{StudentId, StudentName, GroupId, CourseId, LecturerId, CourseName}(
+		s{Mark = 4 || Mark = 5}(
+			Students nj Plan nj Courses nj Marks
+		)
+	)
+)   

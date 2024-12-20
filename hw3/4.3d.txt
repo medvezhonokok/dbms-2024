@@ -1,0 +1,15 @@
+Проверяем каждую ФЗ из второго этапа на избыточность.
+
+FacultyName -> FacultyDeanId  -- избыточная
+FacultyName -> FacultyId && FacultyId -> FacultyDeanId =>  [транзитивность]
+FacultyName -> FacultyDeanId
+
+GroupName -> GroupFacultyId -- избыточная
+GroupName -> GroupId && GroupId -> GroupFacultyId => [транзитивность]
+GroupName -> GroupFacultyId
+
+FacultyDeanId -> FacultyName -- избыточная
+FacultyDeanId -> FacultyId && FacultyId -> FacultyName => [транзитивность]
+FacultyDeanId -> FacultyName
+
+Остальные ФЗ не являются избыточными, тк не могут быть выведены из оставшихся без потерь

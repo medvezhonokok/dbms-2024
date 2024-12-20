@@ -1,0 +1,1 @@
+p{StudentId, StudentName, GroupName}(s{FacultyName = :FacultyName}(Students nj (r{FacultyId=GroupFacultyId}(Groups)) nj Faculties))

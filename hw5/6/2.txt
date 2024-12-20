@@ -1,0 +1,8 @@
+p{StudentId}(Students) 
+except
+p{StudentId}(
+	s{LecturerName  = :LecturerName}(Lecturers) nj 
+	Students nj 
+	Plan nj 
+	Marks
+)

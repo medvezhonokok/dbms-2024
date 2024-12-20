@@ -1,0 +1,5 @@
+p{StudentName, CourseName}(
+	(Students nj Plan nj Courses ljoin Marks)
+    except 
+	(Students nj Plan nj Courses nj Marks)
+)	

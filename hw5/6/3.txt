@@ -1,0 +1,6 @@
+p{StudentId, CourseId}(Marks)
+div
+p{CourseId}(
+	s{LecturerName =:LecturerName}(Lecturers)
+	nj Plan
+)

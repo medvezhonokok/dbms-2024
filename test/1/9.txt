@@ -1,0 +1,9 @@
+p{SessionId} (
+	Sessions
+)	
+diff
+p{SessionId} (
+	p{SessionId, Letter} (Sessions nj Problems)
+	diff 
+	p{SessionId, Letter} (Runs)		
+)
